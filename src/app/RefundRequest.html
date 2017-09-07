@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/Styles.css" rel="stylesheet" />
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div id="content">
+        <h2>Create Change Request</h2>
+        <b style="color:black;font-family:Calibri;font-size:17px; padding-left:5px;padding-right:5px;" >Request Information</b>
+        <hr width=100% align=left size=2 style="margin-top:3px; border: solid 0.6px green !important;" >
+        <div class="row" style="padding-left:10px;padding-right:10px;">
+            <div class="col-sm-4">
+                <label  style="width:200px" for="RequestType">Request Type:</label>
+                <label >
+                    <input name="radioGroup" id="radio1" value="option1" checked="checked" type="radio"> Product Request
+                    <input name="radioGroup" id="radio1" value="option1" type="radio"> Raw Material Request
+                </label>
+            </div>
+            <div class="col-sm-4">
+                <label style="width:200px"  for="EntityName">Entity Name:</label>
+                <input type="text" id="txtEntityName" class="form-control">
+            </div>
+            <div class="col-sm-4">
+                <label style="width:200px"  for="EntityName">Complete By Date:</label>
+                <input type="text" id="txtCompleteByDate" class="form-control">
+            </div>
+        </div>
+        <div class="row" style="padding:10px;">
+            <div class="col-sm-4">
+                <label style="width:200px"  for="RequestType">Primary Requestor:</label>
+                <input type="text" id="txtprimary_requestor" class="form-control">
+            </div>
+            <div class="col-sm-4">
+                <label style="width:200px"  for="EntityName">Additional Requestors:</label>
+                <input type="text" id="txtadditional_requestors" class="form-control">
+            </div>
+            <div class="col-sm-4">
+                <label style="width:200px"  for="EntityName">FYI:</label>
+                <input type="text" id="txctfyi" class="form-control">
+            </div>
+        </div>
+        <b style="color:black;font-family:Calibri;font-size:17px;padding-left:5px;padding-right:5px;">Reasons</b>
+        <hr width=100% align=left size=2 style="margin-top:3px; border: solid 0.6px green !important;">
+        <div class="row" style="padding-left:10px;padding-right:10px;">
+            <div class="col-sm-4">
+                <label style="width:200px" for="RequestType">QP 095 Reasons:</label>
+                <input type="text" id="txtqp095reasons" class="form-control">
+            </div>
+            <div class="col-sm-4">
+                <label style="width:200px" for="EntityName">Explanation Of Change:</label>
+                <input type="text" id="txtexplanation_of_change" class="form-control">
+            </div>
+            <div class="col-sm-4">
+                <label style="width:200px" for="EntityName">Business Justification:</label>
+                <input type="text" id="txtbusiness_justification" class="form-control">
+            </div>
+        </div>
+        <b style="color:black;font-family:Calibri;font-size:17px;padding-left:5px;padding-right:5px;">Business Information</b>
+        <hr width=100% align=left size=2 style="margin-top:3px; border: solid 0.6px green !important;">
+        <div class="row" style="padding-left:10px;padding-right:10px;">
+            <div class="col-sm-4">
+                <label style="width:200px" for="RequestType">Business Segments:</label>
+                <input type="text" id="txtbusiness_segments" class="form-control">
+            </div>
+            <div class="col-sm-4">
+                <label style="width:200px" for="EntityName">Product Line:</label>
+                <input type="text" id="txtproduct_line" class="form-control">
+            </div>
+            <div class="col-sm-4">
+                <label style="width:200px" for="EntityName">Regions Of Sale:</label>
+                <input type="text" id="txtregions_of_sale" class="form-control">
+            </div>
+        </div>
+        <div class="row" style="padding-left:10px;padding-right:10px;">
+            <div class="col-sm-4">
+                <label style="width:200px" for="RequestType">Countries Of Sale:</label>
+                <input type="text" id="txtcountries_of_sale" class="form-control">
+            </div>
+            <div class="col-sm-4">
+                <label style="width:200px" for="EntityName">ACOM Categories:</label>
+                <input type="text" id="txtacom_categories" class="form-control">
+            </div>
+            <div class="col-sm-4">
+                <label style="width:200px" for="EntityName">Manufacturing Locations:</label>
+                <input type="text" id="txtmanufacturing_locations" class="form-control">
+            </div>
+        </div>
+        <div class="row" style="padding-left:10px;padding-right:10px;">
+            <div class="col-sm-4">
+                <label style="width:200px" for="RequestType">Procuring Locations:</label>
+                <input type="text" id="txtprocuring_locations" class="form-control">
+            </div>
+            <div class="col-sm-4">
+                <label style="width:200px" for="EntityName">Cambridge Department:</label>
+                <input type="text" id="txtcambridge_department" class="form-control">
+            </div>
+            <div class="col-sm-4">
+                <label style="width:200px" for="EntityName">Industry Segments:</label>
+                <input type="text" id="txtindustry_segments" class="form-control">
+            </div>
+        </div>
+        <div class="row" style="padding-left:10px;padding-right:10px;">
+            <div class="col-sm-4">
+                <label style="width:200px" for="RequestType">Toller Name And Location:</label>
+                <input type="text" id="txttoller_name_and_location" class="form-control">
+            </div>
+            <div class="col-sm-4">
+                <label style="width:200px" for="EntityName">SAP Numbers:</label>
+                <input type="text" id="txtsap_numbers" class="form-control">
+            </div>
+            <div class="col-sm-4">
+                <label style="width:200px" for="EntityName">Types Of Materials:</label>
+                <input type="text" id="txttypes_of_materials" class="form-control">
+            </div>
+        </div>
+        <b style="color:black;font-family:Calibri;font-size:17px;padding-left:5px;padding-right:5px;">EU Reach</b>
+        <hr width=100% align=left size=2 style="margin-top:3px; border: solid 0.6px green !important;">
+        <div class="row" style="padding-left:10px;padding-right:10px;">
+            <div class="col-sm-4">
+                <label style="width:200px" for="RequestType">Reach Compliance Status:</label>
+                <input type="text" id="txtreach_compliance_status" class="form-control">
+            </div>
+            <div class="col-sm-4">
+                <label style="width:200px" for="EntityName">Vendor Info Input For Reach Compliant Material:</label>
+                <input type="text" id="txtvendor_info_input_for_reach_compliant_material" class="form-control">
+            </div>
+            <div class="col-sm-4">
+                <label style="width:200px" for="EntityName">GTS Input For Reach Compliant Material:</label>
+                <input type="text" id="txtgts_input_for_reach_compliant_material" class="form-control">
+            </div>
+        </div>
+        <b style="color:black;font-family:Calibri;font-size:17px;padding-left:5px;padding-right:5px;">Product Information</b>
+        <hr width=100% align=left size=2 style="margin-top:3px; border: solid 0.6px green !important;">
+        <div class="row" style="padding-left:10px;padding-right:10px;">
+            <div class="col-sm-4">
+                <label style="width:200px" for="RequestType">Units Of Sale:</label>
+                <input type="text" id="txtunits_of_sale" class="form-control">
+            </div>
+            <div class="col-sm-4">
+                <label style="width:200px" for="EntityName">Units Of Measure:</label>
+                <input type="text" id="txtunits_of_measure" class="form-control">
+            </div>
+            <div class="col-sm-4">
+                <label style="width:200px" for="EntityName">SAP Product Hierarchy:</label>
+                <input type="text" id="txtsap_product_hierarchy" class="form-control">
+            </div>
+        </div>
+        <br />
+        <b style="color:black;font-family:Calibri;font-size:17px;padding-left:5px;padding-right:5px;"></b>
+        <hr width=100% align=left size=2 style="margin-top:3px; border: solid 0.6px green !important;">
+       
+        <div>
+            <div class="col-sm-12">
+                <button type="submit" class="Button-grey" >Submit</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
